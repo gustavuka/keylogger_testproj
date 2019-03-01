@@ -13,3 +13,6 @@
 2019-02-28 20:30:12,717: 'p''r''o''t''o''c''o''l''o'Key.space't''c''p''t'Key.space'i''p''o''a''s''k''d''o''s''a'Key.f1Key.f1Key.f1Key.f1Key.f1Key.esc
 2019-02-28 20:33:43,703: palavra
 2019-02-28 20:33:45,820: 'q''u''i''t'Key.esc
+2019-02-28 20:44:50,566: adicionando novo test
+2019-02-28 20:44:52,746: brasil.com.br
+2019-02-28 20:44:53,538: Key.esc
